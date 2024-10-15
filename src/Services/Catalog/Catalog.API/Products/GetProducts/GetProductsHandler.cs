@@ -1,5 +1,4 @@
-﻿using Marten.Linq.QueryHandlers;
-using Marten.Pagination;
+﻿using Marten.Pagination;
 
 namespace Catalog.API.Products.GetProducts
 {
