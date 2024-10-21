@@ -1,5 +1,4 @@
-﻿using BuildingBlocks.Exceptions.Handler;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+﻿using Carter;
 
 namespace Ordering.API
 {
@@ -7,7 +6,7 @@ namespace Ordering.API
     {
         public static IServiceCollection AddApiServices(this IServiceCollection services, IConfiguration configuration)
         {
-            //services.AddCarter();
+            services.AddCarter();
 
             //services.AddExceptionHandler<CustomExceptionHandler>();
             //services.AddHealthChecks()
@@ -18,7 +17,7 @@ namespace Ordering.API
 
         public static WebApplication UseApiServices(this WebApplication app)
         {
-            //app.MapCarter();
+            app.MapCarter();
 
             //app.UseExceptionHandler(options => { });
             //app.UseHealthChecks("/health",
