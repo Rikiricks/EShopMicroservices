@@ -1,6 +1,4 @@
-﻿using MediatR;
-using Ordering.Application.Data;
-using Ordering.Application.Dtos;
+﻿using Ordering.Application.Dtos;
 using Ordering.Application.Exceptions;
 
 namespace Ordering.Application.Orders.Commands.UpdateOrder
